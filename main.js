@@ -1,5 +1,5 @@
 // You can add interactivity with JavaScript here
-import { inject } from "@vercel/analytics"
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 document.addEventListener("DOMContentLoaded", function () {
     // Example: Add smooth scrolling to anchor links
