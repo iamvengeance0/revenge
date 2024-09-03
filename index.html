@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenge Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00bcd4;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #1e1e1e;
+            background-size: cover;
+            background-position: center;
+            padding: 170px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero img {
+            max-width: 150px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero .btn-primary {
+            background-color: #00bcd4;
+            border-color: #00bcd4;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #018c9d;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Fallback Animations */
+@keyframes fallbackFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fallbackSlideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero img {
+    animation: fallbackFadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    animation: fallbackSlideInUp 1s ease-out;
+}
+
+.hero p {
+    animation: fallbackFadeIn 1.5s ease-in-out;
+}
+
+        /* Make the page spacious */
+        .container {
+            max-width: 1100px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Revenge Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- <button id="theme-toggle" class="btn btn-secondary">Switch to Dark Mode</button> -->
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center">
+            <img src="1.png" alt="Logo" class="animate__animated animate__fadeIn">
+            <h1 class="animate__animated animate__slideInUp">Welcome to Revenge Services</h1>
+            <p class="animate__animated animate__fadeIn">Offering top-notch cybersecurity services to meet your needs</p>
+            <a href="services.html" class="btn btn-primary btn-lg animate__animated animate__fadeIn">Explore Services</a>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Revenge Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>

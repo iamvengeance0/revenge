@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .service-card {
+            background-color: #2a2a2a;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            color: #00bcd4;
+            margin-top: 20px;
+        }
+
+        .service-title {
+            font-size: 1.75rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            font-size: 1.1rem;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-price {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #00bcd4;
+        }
+
+        .btn-service {
+            background-color: #00bcd4;
+            border: none;
+            color: #1f1f1f;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-service:hover {
+            background-color: #018c9d;
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            display: block;
+            margin: 0 auto 40px auto;
+            background-color: #555555;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-align: center;
+            width: 120px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #777777;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/services.html" class="back-button">Back</a> <!-- Back Button -->
+        <div class="service-card animate__animated animate__fadeInUp">
+            <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="service-title">Build you a website</div>
+            <div class="service-description">
+                <p>I will build you the website of your dreams for any service or personal use you may need.</p>
+                <p>Click on order below and put the service as the title of your message.</p>
+            </div>
+            <div class="service-price">$50</div>
+            <a href="/contact.html" button class="btn btn-service">Order</a></button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

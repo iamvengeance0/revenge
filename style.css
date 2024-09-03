@@ -1,0 +1,108 @@
+/* Hero Image Styling */
+.hero-image {
+    max-width: 210px; /* Adjust the size of the image */
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Make the image circular */
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #00bcd4; /* Cool accent color */
+}
+
+.section {
+    padding: 60px 0; /* Increased padding */
+}
+
+.card {
+    background-color: #1e1e1e; /* Darker card background */
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Adds a hover effect */
+}
+
+.btn-outline-primary {
+    color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.col-md-4 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+

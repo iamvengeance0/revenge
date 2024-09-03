@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Revenge Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Revenge Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <h5 class="text-center">All payments through crypto</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="hidden" name="access_key" value="522b8988-7631-4f4c-bfcd-330dd7018f9f">
+                            <input type="text" class="form-control" name="name" placeholder="Enter your name">
+                        
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                        
+                            <label for="message">Message</label>
+                            <textarea class="form-control" name="message" rows="4" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5>Contact Information</h5>
+                    <p>Email: readytorollbro@proton.me</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Revenge Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
